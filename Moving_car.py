@@ -202,21 +202,21 @@ def draw():
 
     if forward:
         angle -= 0.1
-        x += 0.004
+        x += 0.0025
         if x > 30:
             forward = False
     else:
         angle += 0.1
-        x -= 0.004
+        x -= 0.0025
         if x < -6:
             forward = True
 
     if forward_ball:
-        x_ball += 0.004
+        x_ball += 0.008
         if x_ball > 9:
             forward_ball = False
     else:
-        x_ball -= 0.004
+        x_ball -= 0.008
         if x_ball < -40:
             forward_ball = True
 
